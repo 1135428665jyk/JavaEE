@@ -1,3 +1,11 @@
+/*
+接口类似于C++的多继承，可以由多个实现
+接口中的方法，在实现中必须补全方法
+
+
+*/
+
+
 public class TestDemo implements Door,Lock {
     @Override
     public void openDoor() {

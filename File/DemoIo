@@ -1,0 +1,10 @@
+public class DemoIo {
+    public static void main(String[] args) {
+        long length =  FileUtils.sizeOf(new File("aaa.txt"));
+
+        Collection<File> files = FileUtils.listFiles(new File("."), EmptyFileFilter.NOT_EMPTY, null);
+        for (File file:files){
+            System.out.println(file.getAbsolutePath());
+        }
+    }
+}
